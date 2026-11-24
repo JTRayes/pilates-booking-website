@@ -104,4 +104,4 @@ pilates-booking-website/
 
 ## Team
 
-Team project with Ruyuf Alsayari, Rama Alowlah and Manar Almousa.
+Built as a team of four students.
