@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site1.master.cs" Inherits="pilatesstudio.Site1" %><!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Pilates Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="<%= ResolveClientUrl("~/content.css") %>" rel="stylesheet" type="text/css" />    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:white; margin:0; padding:0;">
+    <form id="form1" runat="server" style="margin:0; padding:0;">
+        <header class="header">
+            <div class="container nav-container">
+                <div class="logo-area">
+                    <img src="images/Logo.png" class="logo-img" alt="Logo" />
+                    <span class="logo-text">PILATES STUDIO</span>
+                </div>
+                <nav class="navbar">
+                    <a href="mainpage.aspx">HOME</a>
+                    <a href="Services.aspx">SERVICES</a>
+                    <a href="UserLogin.aspx">LOGIN</a>
+                    <a href="Register.aspx">REGISTER</a>
+                    <a href="Contact.aspx">CONTACT</a>
+                    <asp:Button ID="btnLogout"
+    runat="server"
+    Text="SIGN OUT"
+    OnClick="btnLogout_Click"
+    CssClass="logout-btn" />
+                </nav>
+            </div>
+        </header>
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </main>
+        <footer style="text-align:center; padding: 40px; color: #8b7d77; font-size: 12px; background-color: #f3f0ef;">
+            &copy; 2026 PILATES STUDIO. All Rights Reserved.
+        </footer>
+    </form>
+</body>
+</html>

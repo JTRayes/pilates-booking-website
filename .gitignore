@@ -1,0 +1,11 @@
+# Visual Studio build output and user settings
+bin/
+obj/
+.vs/
+packages/
+*.user
+*.suo
+
+# Local database files (may contain personal data)
+*.mdf
+*.ldf
